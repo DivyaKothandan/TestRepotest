@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="utils.WikiTestNG">
+      <class name="pages.DataTesting">
         <methods>
-          <include name="logout"/>
-          <include name="title"/>
+          <include name="closeApplication"/>
           <include name="openBrowser"/>
-          <include name="launchURL"/>
-          <include name="login"/>
+          <include name="login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- utils.WikiTestNG -->
+      </class> <!-- pages.DataTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

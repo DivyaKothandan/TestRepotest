@@ -29,17 +29,64 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">25.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">60.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">pages.DataTesting<td><a href="#m1"><b>login</b>  </a></td><td class="numi">1</td><td>1586684971697</td><td class="numi">9303</td></tr><tr class="failedodd"><td><a href="#m2"><b>login</b>  </a></td><td class="numi">1</td><td>1586684971697</td><td class="numi">9303</td></tr><tr class="failedodd"><td><a href="#m3"><b>login</b>  </a></td><td class="numi">1</td><td>1586684971697</td><td class="numi">9303</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">utils.WikiTestNG<td><a href="#m1"><b>printUsername</b>  </a></td><td class="numi">1</td><td>1586080209540</td><td class="numi">39</td></tr><tr class="passedodd"><td><a href="#m2"><b>title</b>  </a></td><td class="numi">1</td><td>1586080209580</td><td class="numi">16</td></tr>
+<tr class="passedodd"><td rowspan="3">pages.DataTesting<td><a href="#m4"><b>login</b>  </a></td><td class="numi">2</td><td>1586684993800</td><td class="numi">23075</td></tr><tr class="passedodd"><td><a href="#m5"><b>login</b>  </a></td><td class="numi">2</td><td>1586684993800</td><td class="numi">23075</td></tr><tr class="passedodd"><td><a href="#m6"><b>login</b>  </a></td><td class="numi">2</td><td>1586684993800</td><td class="numi">23075</td></tr>
 </table>
 <h1>Default test</h1>
-<a id="m1"></a><h2>utils.WikiTestNG:printUsername</h2>
+<a id="m1"></a><h2>pages.DataTesting:login</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">DivyaKothandan</td>
+<td style="padding-left:.5em;padding-right:2em">SeleniumTesting</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;userloginForm&apos;]/form/div[1]&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;RAMYA-PC&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Ramya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62726}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d482bd35c4fdce3d8008568597e73e0f
+*** Element info: {Using=xpath, value=//*[@id=&apos;userloginForm&apos;]/form/div[1]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at pages.DataTesting.login(DataTesting.java:49)
+<br/>25 lines not shown
+</td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>utils.WikiTestNG:title</h2>
+<a id="m2"></a><h2>pages.DataTesting:login</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em"></td>
+<td style="padding-left:.5em;padding-right:2em"></td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>pages.DataTesting:login</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Divya</td>
+<td style="padding-left:.5em;padding-right:2em">Selenium</td>
+</tr>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
